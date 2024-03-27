@@ -45,13 +45,34 @@ main {
   flex-direction: column;
   justify-content: center;
   padding-left: 30px;
-  border: 2px solid red;
+  box-shadow: 
+    2px 2px 2px #5555;
 }
 
 #middle {
   grid-area: a2;
   height: 100%;
   border: 2px solid red;
+}
+.card-holder {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+  justify-content: center;
+  padding: 25px 0px;
+}
+.card {
+  width: 150px;
+  height: 100px;
+  padding: 25px 15px;
+  background-color: #ffe6dd;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 
+  0px 0px 10px #FF956E99,
+    inset 0px 0px 5px #FF956E99;
 }
 
 #rimg {
@@ -71,7 +92,8 @@ main {
   align-items: flex-end;
   justify-content: center;
   padding-right: 30px;
-  border: 2px solid red;
+  box-shadow: 
+    -2px 2px 2px #5555;
 }
 
 #rimg div, #limg div {
