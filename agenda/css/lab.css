@@ -11,6 +11,7 @@
 body {
   font-family: "Quicksand", sans-serif;
   font-weight: 400;
+  font-size: 1.125rem;
 }
 h1, h2 {
   font-family: "Abril Fatface", serif;
@@ -33,37 +34,38 @@ main {
 #limg {
   grid-area: a1;
   background:
-    linear-gradient(to right, #000d, #0005),
+    linear-gradient(to right, #0005, #0005),
     url(https://images.unsplash.com/photo-1558655146-d09347e92766?q=80&w=2128&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
   ;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 75%;
-  color: #FF956E;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 30px;
+  align-items: center;
+  text-align: center;
   box-shadow: 
-    2px 2px 2px #5555;
+    2px 2px 2px #5555
+  ;
+  border-radius: 0px 25px 25px 0px;
 }
 
 #middle {
   grid-area: a2;
   height: 100%;
-  border: 2px solid red;
 }
 .card-holder {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 25px;
   justify-content: center;
-  padding: 25px 0px;
+  height: 100%;
 }
 .card {
-  width: 150px;
-  height: 100px;
+  width: 100%;
+  height: 100%;
   padding: 25px 15px;
   background-color: #ffe6dd;
   display: flex;
@@ -71,34 +73,117 @@ main {
   justify-content: center;
   align-items: center;
   box-shadow: 
-  0px 0px 10px #FF956E99,
-    inset 0px 0px 5px #FF956E99;
+  2px 2px 2px #0005;
+  border-radius: 25px;
+}
+.card:nth-of-type(4),
+.card:nth-of-type(5),
+.card:nth-of-type(6) {
+  box-shadow: 
+  -2px 2px 2px #0005;
 }
 
 #rimg {
   grid-area: a3;
   background:
-    linear-gradient(to right, #0005, #000d),
+    linear-gradient(to right, #0005, #0005),
     url(https://images.unsplash.com/photo-1524536120883-854d2c00bf1f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
   ;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 75%;
-  color: #FF956E;
+  
   text-align: right;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: center;
   justify-content: center;
-  padding-right: 30px;
-  box-shadow: 
-    -2px 2px 2px #5555;
+  text-align: center;
+  box-shadow: -2px 2px 2px #5555;
+  border-radius: 25px 0px 0px 25px;
 }
 
-#rimg div, #limg div {
+.banner div {
   max-width: 500px;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
+  background-color: #000a;
+  backdrop-filter: blur(2px);
+  padding: 30px;
+  border-radius: 25px;
+  color: #efefef;
+}
+.banner h1, .banner h2 {
+  font-size: 2rem;
+  color: #FF956E;
+}
+.banner p b {
+  border-bottom: 2px solid white;
+  border-radius: 2px;
+  padding-bottom: 3px;
+}
+
+@media screen and (max-width: 768px) and (min-width: 325px) {
+  body main {
+    background-color: pink;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+  main {
+    height: auto;
+    gap: 0px;
+    background: #779DFF;
+    grid-template-rows: 20vh 80vh 1fr;
+    grid-auto-columns: 1fr 90vw 1fr;
+    grid-template-areas: 
+      ". a1 ."
+      ". a2 ."
+      ". a3 ."
+    ;
+  }
+  
+  #limg, #rimg {
+    height: 100%;
+    width: 100%;
+  }
+  #limg {
+    border-radius: 0px 0px 25px 25px;
+  }
+  #rimg {
+    border-radius: 25px 25px 0px 0px;
+  }
+
+  .card-holder {
+    grid-template-columns: 1fr 1fr;
+    grid-auto-columns: 25%;
+    gap: 10px;
+    align-content: stretch;
+    height: 100%;
+    padding: 25px 0px;
+  }
+  .card {
+    padding: 15px;
+  }
+  
+  .banner div {
+    gap: 5px;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 25px;
+    width: 90%;
+  }
+  .banner h1, .banner h2 {
+    font-size: 1.25rem;
+  }
+  .banner p {
+    font-size: 0.75rem;
+  }
+  .banner p b {
+    padding-bottom: 0.5px;
+  }
+
 }
