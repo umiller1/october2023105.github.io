@@ -88,7 +88,7 @@ p.additional-info {
 }
 
 .intro {
-  margin: 15px 0px 25px
+  margin: 15px 0px 25px;
 }
 .agenda {
   margin-bottom: 25px;
@@ -97,7 +97,7 @@ p.additional-info {
   margin-bottom: 10px;
 }
 .attendance {
-  margin-bottom: 25px
+  margin-bottom: 25px;
 }
 .attendance p {
   margin-top: 5px;
@@ -175,4 +175,88 @@ a.disabled {
   pointer-events: none !important;
   opacity: 0.5;
   filter: grayscale(100%);
+}
+
+@media screen and (max-width: 768px) and (min-width: 325px) {
+  main {
+    height: auto;
+    flex-direction: column;
+    background: #FFE4D8;
+  }
+  #left, #right {
+    height: 50vh;
+    height: auto;
+  }
+  .container {
+    padding: 10px 0px;
+  }
+  .container.a, .container.b {
+    flex: 1;
+  }
+  .container.a {
+    margin-right: auto;
+  }
+  .container.b {
+    margin-left: auto;
+    gap: 10px;
+  }
+
+  h2 {
+    font-family: 1.5rem;
+  }
+  ul {
+    margin-left: 15px;
+  }
+  p.additional-info {
+    font-size: 0.65rem;
+  }
+  
+  .intro {
+    margin: 10px 0px;
+  }
+  .agenda {
+    margin-bottom: 10px;
+  }
+  .agenda h2 {
+    margin-bottom: 5px;
+  }
+  .attendance {
+    margin-bottom: 20px;
+  }
+  .attendance p {
+    margin-top: 0px;
+  }
+  
+  .btn {
+    padding: 10px;
+    gap: 5px;  
+    font-size: 1rem;
+  }
+  .btn.alt {
+    width: 100%;
+  }
+  .btn.alt:hover {
+    width: auto;
+    height: 125px;
+  }
+  
+  .funfact {
+    border-radius: 25px;
+  }
+  
+  .buttons {
+    gap: 10px;
+  }
+  .buttons .btn {
+    width: 140px;
+    height: 140px;
+    text-align: center;
+  }
+  .buttons .btn img {
+    width: 40px;
+  }
+  p, li {
+    font-size: 1rem;
+  }
+  
 }
