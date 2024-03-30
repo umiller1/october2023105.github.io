@@ -27,7 +27,7 @@ main {
 #right {
   background:
     linear-gradient(to bottom, #000a, #0000, #000a),
-    url(https://encrypted-tbn1.gstatic.com/licensed-image?q=tbn:ANd9GcSfUSc9EsfIUxg-fQnsI6lLfUb1_HDVCyknI-Kq0-PRv61AQ4y4XoOOhNh-ND09zNGgj9zjoVBAxvHQkYE)
+    url(https://i.pinimg.com/originals/d3/92/45/d392453ec820e654fc0c8a728610d5c6.jpg)
   ;
   background-size: cover;
   background-position: center;
@@ -124,10 +124,11 @@ p.additional-info {
 .btn.alt {
   display: flex;
   flex-direction: row;
-  flex: 1 50%;
+  height: 50%;
   margin: 0px auto;
   background: linear-gradient(to right, #779DFF, #FF956E);
   align-self: end;
+  transition: all 0.75s;
 }
 .btn.alt img {
   width: 50px
@@ -139,7 +140,8 @@ p.additional-info {
   background: #FF956E55;
 }
 .btn.alt:hover {
-  width: 90%;
+  letter-spacing: 0.2em;
+  height: 100%;
 }
 
 .funfact, .btn {
@@ -233,11 +235,11 @@ a.disabled {
     font-size: 1rem;
   }
   .btn.alt {
-    width: 100%;
+    height: 100%;
+    width: 80%;
   }
   .btn.alt:hover {
-    width: auto;
-    height: 125px;
+    width: 100%;
   }
   
   .funfact {
