@@ -125,6 +125,7 @@ p.additional-info {
   display: flex;
   flex-direction: row;
   height: 50%;
+  width: 80%;
   margin: 0px auto;
   background: linear-gradient(to right, #779DFF, #FF956E);
   align-self: end;
@@ -142,6 +143,7 @@ p.additional-info {
 .btn.alt:hover {
   letter-spacing: 0.2em;
   height: 100%;
+  width: 100%;
 }
 
 .funfact, .btn {
