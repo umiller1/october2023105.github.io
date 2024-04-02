@@ -27,7 +27,7 @@ main {
 #right {
   background:
     linear-gradient(to bottom, #000a, #0000, #000a),
-    url(https://i.pinimg.com/originals/d3/92/45/d392453ec820e654fc0c8a728610d5c6.jpg)
+    url(https://images.unsplash.com/photo-1518157770830-df40b281672e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
   ;
   background-size: cover;
   background-position: center;
@@ -120,6 +120,7 @@ p.additional-info {
   font-size: 1.5rem;
   transition: all 0.5s;
   font-family: "Abril Fatface", serif;
+  box-shadow: 0px 0px 5px #0003;
 }
 .btn.alt {
   display: flex;
