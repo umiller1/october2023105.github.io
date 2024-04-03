@@ -1,0 +1,59 @@
+/* General Styles */
+.palette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+.palette h2 {
+    flex: 100%;
+}
+.palette .card {
+    width: 140px;
+    height: 140px;
+    border-radius: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Color Palette 1 */
+#head1 {
+    font-family: cursive;
+    text-align: center;
+}
+#c1 {
+    background-color: #3bff00;
+    color: #111;
+    font-family: cursive;
+    text-align: center;
+    padding: 24px;
+}
+#c2 {
+    background-color: #00ccff;
+    color: #111;
+    font-family: cursive;
+    text-align: center;
+    padding: 24px;
+}
+#c3 {
+    background-color: #ff8123;
+    color: #111;
+    font-family: cursive;
+    text-align: center;
+    padding: 24px;
+}
+
+/* Color Palette 2 */
+#head2 {
+    font-family: fantasy;
+    text-align: center;
+}
+#c4 {
+    background-color: #e7d8ff;
+    color: #111;
+    font-family: fantasy;
+    text-align: center;
+    padding: 24px;
+}
