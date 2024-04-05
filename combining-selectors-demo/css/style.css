@@ -1,0 +1,41 @@
+#navbar {
+    background-color: #047456;
+    text-align: center;
+    padding: 24px;
+}
+
+/* The space is saying go inside of the selector to the left of me and
+then target the selector to the right of me. */
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+p a {
+    color: orange;
+}
+
+/* ONLY target a paragraph when it ALSO has a class of warning. */
+p.warning {
+    color: crimson;
+}
+
+p.warning a {
+    color: lavender;
+}
+
+ul {
+    color: green;
+}
+
+ul a {
+    color: lime;
+}
+
+ul p a {
+    color: purple;
+}
+
+ul div a {
+    color: lightblue;
+}
