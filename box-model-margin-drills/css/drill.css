@@ -1,0 +1,60 @@
+/* Drill 1 - Write your code solution below */
+#d1-div2 {
+    margin-top: 20px;
+}
+
+/* Drill 2 - Write your code solution below */
+#d2-div2 {
+    margin: 25px 0px;
+}
+
+/* Drill 3 - Write your code solution below */
+#d3-div2 {
+    margin-top: 25px;
+}
+
+/* Drill 4 - Write your code solution below */
+#d4-div2 {
+    margin: 25px 0px;
+}
+/* 
+Option 2:
+#d4-div2,
+#d4-div3 {
+    margin-top: 25px;
+} */
+/* 
+Option 3:
+#d4-div1 {
+    margin-bottom: 25px;
+}
+#d4-div3 {
+    margin-top: 25px;
+} */
+
+/* Drill 5 - Write your code solution below */
+#d5-h5-1 {
+    margin-bottom: 0px;
+}
+#d5-h1-1 {
+    margin: 0px;
+}
+#d5-h2-1 {
+    margin-top: 8px;
+}
+.d5-div {
+    text-align: center;
+}
+
+/* Drill 6 - Write your code solution below */
+.d6-div {
+    margin-right: 48px;
+}
+
+/* Drill 7 - Write your code solution below */
+#d7-container {
+    text-align: center;
+}
+.d7-div {
+    margin: 12px 24px;
+}
