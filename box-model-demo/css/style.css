@@ -1,0 +1,32 @@
+div {
+    border: 10px dashed #642300;
+    margin: 24px 0px;
+    /*
+        1 value margin/padding:
+        margin gets applied to all 4 sides of the element.
+
+        2 value margin/padding:
+        The first value gets applied to the top and bottom of the element.
+        The second value gets applied to the left and right of the element.
+
+        3 value margin/padding:
+        The first value gets applied to the top of the element.
+        The second value still gets to the left and right of the element
+        The third value gets applied to the bottom of the element.
+
+        4 value margin/padding:
+        The first value still gets applied to the top.
+        The second value now gets applied to just the right
+        The third value still gets applied to the bottom
+        The fourth value gets applied to the left
+    */
+    padding: 24px 36px;
+    background-color: coral;
+}
+
+p {
+    margin: 60px;
+    padding: 48px 60px;
+    background-color: cornflowerblue;
+    border-radius: 48px;
+}
