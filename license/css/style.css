@@ -7,15 +7,25 @@
     Good luck, and have fun!
 */
 #license {
+    /* color: #fdcc73; */
+    /* color: #ed8c4f; */
     border: 2px solid black;
     border-radius: 20px;
-    background-color: gold;
     padding: 24px;
     width: 700px;
+    background: 
+        linear-gradient(to bottom right, #fdcc73, #ed8c4f)
+    ;
+}
+
+#content {
+    vertical-align: top;
 }
 
 h1 {
     font-size: 60px;
+    color: navy;
+    margin: 0px;
 }
 
 #right-side, #left-side {
@@ -24,12 +34,11 @@ h1 {
 
 #left-side {
     width: 60%;
-    border: 2px solid red;
+    font-family: sans-serif;
 }
 
 #right-side {
     width: 35%;
-    border: 2px solid blue;
 }
 
 h4 {
@@ -37,14 +46,25 @@ h4 {
     background-color: darkblue;
     color: white;
     padding: 8px;
+    font-size: 24px;
+    margin: 0px;
 }
 
 #id-and-expiration div {
     display: inline-block;
+    color: navy;
+    margin: 8px;
+}
+
+#id-and-expiration span {
+    color: red;
+    font-weight: bold;
 }
 
 #address {
     font-weight: bold;
+    font-size: 18px;
+    margin: 9px;
 }
 
 #small-pic, #data-fields {
@@ -53,14 +73,25 @@ h4 {
 
 #small-pic img {
     width: 90px;
+    opacity: 0.5;
 }
 
 #signature {
     text-align: center;
+    font-size: 28px;
+    font-weight: bold;
 }
 
 #data-left, #data-right {
     display: inline-block;
+    color: navy;
+    margin: 8px;
+}
+
+#data-left span,
+#data-right span {
+    color: red;
+    font-weight: bold;
 }
 
 #right-side img {
@@ -69,8 +100,29 @@ h4 {
 
 #donor-and-real-id {
     text-align: center;
+    padding-top: 4px;
 }
 
 #donor-and-real-id div {
     display: inline-block;
+    text-align: right;
+}
+
+#donor {
+    color: red;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-right: 24px;
+}
+
+#real-id {
+    display: inline-block;
+    background-color: gold;
+    border-radius: 50%;
+    font-size: 24px;
+    text-align: center;
+    padding: 4px;
+}
+#real-id i {
+    color: white;
 }
