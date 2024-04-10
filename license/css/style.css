@@ -6,3 +6,71 @@
 
     Good luck, and have fun!
 */
+#license {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: gold;
+    padding: 24px;
+    width: 700px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+#right-side, #left-side {
+    display: inline-block;
+}
+
+#left-side {
+    width: 60%;
+    border: 2px solid red;
+}
+
+#right-side {
+    width: 35%;
+    border: 2px solid blue;
+}
+
+h4 {
+    text-align: center;
+    background-color: darkblue;
+    color: white;
+    padding: 8px;
+}
+
+#id-and-expiration div {
+    display: inline-block;
+}
+
+#address {
+    font-weight: bold;
+}
+
+#small-pic, #data-fields {
+    display: inline-block;
+}
+
+#small-pic img {
+    width: 90px;
+}
+
+#signature {
+    text-align: center;
+}
+
+#data-left, #data-right {
+    display: inline-block;
+}
+
+#right-side img {
+    width: 100%;
+}
+
+#donor-and-real-id {
+    text-align: center;
+}
+
+#donor-and-real-id div {
+    display: inline-block;
+}
