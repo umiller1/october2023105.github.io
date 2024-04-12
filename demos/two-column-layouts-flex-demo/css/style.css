@@ -5,3 +5,36 @@ body {
     margin: 0px;
     font-family: sans-serif;
 }
+
+#two-columns {
+    display: flex;
+}
+
+#sidebar {
+    background-color: #ffad49;
+    width: 250px;
+    padding: 24px;
+    border-right: 5px solid #1f0083;
+}
+#sidebar h2 {
+    border-bottom: 2px solid #1f0083;
+    padding-bottom: 8px;
+}
+
+#sidebar ul {
+    list-style-type: none;
+    padding: 0px;
+}
+#sidebar ul a {
+    color: #111;
+    text-decoration: none;
+}
+
+#sidebar ul li {
+    padding: 4px 0px;
+}
+
+#main-content {
+    padding: 48px;
+    flex: 1;
+}
