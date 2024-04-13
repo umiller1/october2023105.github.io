@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#grid-layout {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    grid-template-areas:
+        "content sidebar"
+    ;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    padding: 18px;
+}
+#sidebar h2 {
+    background-color: #0b8f82;
+    margin: 0px;
+    padding: 12px;
+    color: white;
+    font-size: 18px;
+}
+
+#sidebar ul {
+    background-color: #efefef;
+    border: 1px solid #0b8f82;
+    margin: 0px 0px 36px;
+    list-style-type: none;
+    padding: 0px 12px;
+}
+
+#main {
+    background-color: lightcyan;
+    grid-area: content;
+}
