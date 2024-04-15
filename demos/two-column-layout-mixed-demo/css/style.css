@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#header {
+    background-color: lightskyblue;
+}
+
+#sidebar {
+    background-color: lightcyan;
+}
+#main {
+    background-color: lightgoldenrodyellow;
+}
