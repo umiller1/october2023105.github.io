@@ -27,7 +27,7 @@ main {
 #right {
   background:
     linear-gradient(to bottom, #000a, #0000, #000a),
-    url(https://images.unsplash.com/photo-1591088722104-ede622d0986e?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    url(https://exoplanets.nasa.gov/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsibWVzc2FnZSI6IkJBaHBBaHdjIiwiZXhwIjpudWxsLCJwdXIiOiJibG9iX2lkIn19--965f5dbb8dccf74c7a6b239f7618b6a1f897b3f4/55Cancrie_illo.jpg?disposition=inline)
   ;
   background-size: cover;
   background-position: center;
