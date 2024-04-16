@@ -56,6 +56,40 @@ body {
 
 
 #main {
-    background-color: lightgoldenrodyellow;
     grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.metube-item {
+    flex: 250px;
+    margin-right: 12px;
+    margin-bottom: 24px;
+}
+
+.metube-item .thumbnail-placeholder {
+    aspect-ratio: 16 / 9;
+    background: radial-gradient(at top left, crimson, orange);
+    border-radius: 8px;
+}
+
+.metube-item h4 {
+    margin: 8px;
+}
+.metube-item h4 a {
+    text-decoration: none;
+    color: #111;
+    display: block;
+}
+.metube-item h4 a:hover {
+    text-decoration: underline;
+}
+
+.metube-item .video-details {
+    margin: 8px;
+    font-size: 14px;
+}
+
+.metube-item .video-channel {
+    margin-bottom: 4px;
 }
