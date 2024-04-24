@@ -67,3 +67,53 @@ body {
     background-color: #498300;
     color: #efefef;
 }
+
+/* Footer */
+#footer {
+    text-align: center;
+    color: #efefef;
+    background-color: #111;
+    padding: 10px 0px;
+}
+
+/* Cat Hero */
+#cat-hero {
+    background-image: url(../images/hero2.jpg);
+    background-size: cover;
+    height: 100vh;
+    color: #efefef;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+#cat-hero .container {
+    width: max-content;
+    margin: 0px;
+    padding-right: 10%;
+    padding-bottom: 100px;
+}
+#cat-hero h1 {
+    font-size: 100px;
+    margin: 0px;
+    font-family: "Staatliches", sans-serif;
+}
+#cat-hero p {
+    margin: 10px 0px 20px;
+}
+#cat-hero a {
+    display: inline-block;
+    border: 2px solid #FFC700;
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: #FFC700;
+    transition:
+        background-color 0.5s,
+        color 0.5s
+    ;
+}
+#cat-hero a:hover {
+    background-color: #FFC700;
+    color: #111;
+}
