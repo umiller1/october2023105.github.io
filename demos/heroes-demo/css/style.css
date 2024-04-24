@@ -227,3 +227,10 @@ body {
     padding: 24px;
     margin: 5vh 5vw 10vh 0px;
 }
+
+.spacer {
+    height: 50vh;
+    background-image: url(../images/emerald-seas.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
