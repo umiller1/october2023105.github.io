@@ -117,3 +117,113 @@ body {
     background-color: #FFC700;
     color: #111;
 }
+
+/* Extra Heroes */
+#hero-1 {
+    height: 100vh;
+    background-image: url(../images/lizard.jpg);
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+#hero-1 h1 {
+    font-size: 15vw;
+    padding-left: 10vw;
+}
+
+#hero-2 {
+    background-image: url(../images/lonely-ocean.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+#hero-2 h2 {
+    font-size: 8vw;
+    margin-bottom: 5vh;
+    margin-right: 5vw;
+}
+#hero-2 h4 {
+    font-size: 3vw;
+    margin: 0px 5vw 0px 0px;
+}
+#hero-2 a {
+    font-size: 1.5vw;
+    display: inline-block;
+    background-color: #f2c7ff;
+    color: #4a0060;
+    text-decoration: none;
+    padding: 24px;
+    margin: 5vh 5vw 10vh 0px;
+}
+
+#hero-3 {
+    background-image: url(../images/orange-wildflowers.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+#hero-3 .hero-content {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+#hero-3 h2 {
+    font-size: 8vw;
+    margin-bottom: 5vh;
+    margin-right: 5vw;
+}
+#hero-3 h4 {
+    font-size: 3vw;
+    margin: 0px 5vw 0px 0px;
+}
+#hero-3 a {
+    font-size: 1.5vw;
+    display: inline-block;
+    background-color: #FFC700;
+    color: #111;
+    text-decoration: none;
+    padding: 24px;
+    margin: 5vh 5vw 10vh 0px;
+}
+
+#hero-4 {
+    background-image: url(../images/stars-on-velvet.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#hero-4 .hero-content {
+    color: #efefef;
+    text-align: center;
+    padding-top: 20vh;
+}
+
+#hero-4 h2 {
+    font-size: 8vw;
+    margin-bottom: 5vh;
+    margin-right: 5vw;
+}
+#hero-4 h4 {
+    font-size: 3vw;
+    margin: 0px 5vw 0px 0px;
+}
+#hero-4 a {
+    font-size: 1.5vw;
+    display: inline-block;
+    background-color: #FFC700;
+    color: #111;
+    text-decoration: none;
+    padding: 24px;
+    margin: 5vh 5vw 10vh 0px;
+}
