@@ -16,6 +16,10 @@ body {
 h1 {
     font-family: "Staatliches", sans-serif;
 }
+img {
+    width: 100%;
+    object-fit: cover;
+}
 .contain {
     width: 90vw;
     max-width: 1200px;
@@ -127,7 +131,7 @@ nav a:hover {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    background: linear-gradient(to bottom, #edd5c1, #edd5c1, #edd5c1, #edd5c1, #edd5c1, #418eaa);
+    background-color: #edd5c1;
 }
 #cards .contain {
     display: flex;
@@ -175,13 +179,17 @@ nav a:hover {
 }
 
 /* GALLERY */
+#gallery {
+    position: relative;
+    z-index: 1;
+}
 .banner {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 25vh;
+    height: 50vh;
     background: 
-        linear-gradient(to bottom, #fff0, #fff0, #fff0, #edd5c155, #edd5c1),
+        linear-gradient(to top, #fff0, #edd5c155, #edd5c1),
         url(../images/gallery-hero.jpg)
     ;
     background-size: cover;
@@ -200,4 +208,105 @@ nav a:hover {
     font-size: 3.5vw;
     letter-spacing: 0.1em;
     font-family: "Staatliches";
+}
+.gal {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    padding: 50px 0px;
+}
+.gal img {
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 25px;
+}
+.gal .img-overlay {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: -1;
+    transition: all 0.5s;
+}
+.gal img:hover + .img-overlay {
+    opacity: 1;
+    filter: blur(5px);
+}
+.gal img:hover:nth-of-type(1) + .img-overlay {
+    background-image: url(../images/img1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gal img:hover:nth-of-type(2) + .img-overlay {
+    background-image: url(../images/img2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gal img:hover:nth-of-type(3) + .img-overlay {
+    background-image: url(../images/img3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gal img:hover:nth-of-type(4) + .img-overlay {
+    background-image: url(../images/img4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gal img:hover:nth-of-type(5) + .img-overlay {
+    background-image: url(../images/img5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.gal img:hover:nth-of-type(6) + .img-overlay {
+    background-image: url(../images/img6.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+/* FOOTER */
+footer {
+    background-color: #214957;
+    border-top: 0.5px solid #edd5c1;
+    padding: 25px 0px;
+    font-size: 1rem;
+    color: #eee;
+}
+footer .contain {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+footer .contain div {
+    margin-left: auto;
+}
+footer a {
+    color: #eee;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+footer a:hover {
+    color: #edd5c1;
+    letter-spacing: 0.09em;
+}
+footer .logo {
+    font-family: "Staatliches", sans-serif;
+    display: block;
+    margin: 0px;
+    text-align: right;
+    font-size: 2.5rem;
+}
+footer .logo span {
+    color: #edd5c1;
+    text-shadow: 0px 0px 5px #edd5c155;
+}
+footer .logo:hover {
+    letter-spacing: normal;
+    text-shadow: 0px 0px 5px #edd5c1;
+}
+footer .logo:hover span {
+    text-shadow: 0px 0px 5px #edd5c1;
 }
