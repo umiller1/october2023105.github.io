@@ -260,22 +260,11 @@ nav a:hover {
     pointer-events: none;
     transition: opacity 0.5s;
 } 
-.gal:has(img:hover) .img-overlay {
+.gal img:hover + .img-overlay {
     opacity: 1;
     visibility: visible;
     z-index: 1;
-    pointer-events: all;
 }
-.img-overlay:hover, .gal img:hover + .img-overlay:hover  {
-    z-index: 1;
-    opacity: 1;
-    visibility: visible;
-}
-/* .gal:has(.img-overlay:hover) img:not(:hover),
-.gal:has(img:hover) img:not(:hover) 
-{
-    pointer-events: none;
-} */
 
 .gal img:hover:nth-of-type(1) + .img-overlay {
     background: url(../images/img1.jpg);
