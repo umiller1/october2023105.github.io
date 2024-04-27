@@ -145,10 +145,12 @@ nav a:hover {
     aspect-ratio: 1 / 1;
     border-radius: 25px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.2s;
     z-index: 1;
+    gap: 10px;
 }
 .card:last-child {
     background: linear-gradient(-50deg, #214957, #418eaa, #214957);
@@ -171,11 +173,22 @@ nav a:hover {
     opacity: 0;
     border-radius: 50%;
 }
+.card h2 {
+    color: #edd5c1;
+    font-size: 2.5rem;
+}
 .card a {
+    display: block;
+    width: 70%;
+    border: 2px solid #edd5c1;
+    border-radius: 15px;
     color: #edd5c1;
     text-decoration: none;
-    font-size: 2.5rem;
-    padding: 25px;
+    padding: 10px 20px;
+    font-weight: 300;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.5s;
 }
 
 /* GALLERY */
@@ -199,7 +212,7 @@ nav a:hover {
     text-align: center;
     background-color: #418eaa55;
     width: auto;
-    max-width: auto;
+    max-width: none;
     padding: 25px 50px;
     backdrop-filter: blur(5px);
     border-radius: 25px;
@@ -214,6 +227,14 @@ nav a:hover {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 25px;
     padding: 50px 0px;
+    transition: all 0.5s;
+}
+#gallery:has(img:hover) {
+    background-color: #111;
+}
+.gal:has(img:hover) img {
+    opacity: 0.2;
+    filter: blur(5px);
 }
 .gal img {
     height: 100%;
@@ -221,6 +242,9 @@ nav a:hover {
     border-radius: 25px;
 }
 .gal .img-overlay {
+    box-shadow: 
+        0px 0px 15px #edd5c1,
+        inset 0px 0px 15px #edd5c1;
     width: 50%;
     height: 50%;
     opacity: 0;
@@ -232,16 +256,26 @@ nav a:hover {
     right: 0px;
     bottom: 0px;
     z-index: -1;
+    visibility: hidden;
+    pointer-events: none;
     transition: opacity 0.5s;
-}
-.gal img:hover + .img-overlay {
+} 
+.gal:has(img:hover) .img-overlay {
     opacity: 1;
+    visibility: visible;
     z-index: 1;
+    pointer-events: all;
 }
-.gal img:hover + .img-overlay:hover {
+.img-overlay:hover, .gal img:hover + .img-overlay:hover  {
     z-index: 1;
     opacity: 1;
+    visibility: visible;
 }
+/* .gal:has(.img-overlay:hover) img:not(:hover),
+.gal:has(img:hover) img:not(:hover) 
+{
+    pointer-events: none;
+} */
 
 .gal img:hover:nth-of-type(1) + .img-overlay {
     background: url(../images/img1.jpg);
