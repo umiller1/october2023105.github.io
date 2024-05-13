@@ -27,7 +27,7 @@ main {
 #right {
   background:
     linear-gradient(to bottom, #000a, #0000, #000a),
-    url(https://images.unsplash.com/photo-1490126125528-a0c3b2998dcd?q=80&w=2187&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+    url(https://images.unsplash.com/photo-1495741770155-e4137dcb83ec?q=80&w=2073&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
   ;
   background-size: cover;
   background-position: center;
@@ -283,4 +283,9 @@ a.disabled {
   border: 5px ridge #FF956E;
   padding: 10px;
   text-align: center;
+}
+
+.additional-info span {
+  color: #fffa;
+  font-variant: small-caps;
 }
